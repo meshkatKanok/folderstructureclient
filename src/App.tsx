@@ -94,7 +94,7 @@ reset()
 
           <div>
             <div style={{ display: "flex", alignItems: "center" }}>
-              <img style={{ width: "40px", height: "40px" }} src='https://i.ibb.co/9HdC8Kt/fileimge.png' alt="" />
+              <img style={{ width: "40px", height: "40px" }} src='https://backend-pink-seven.vercel.app/fileimge.png' alt="" />
               <h3 style={{ color: 'white' }}>Root</h3>
 
             </div>
@@ -102,7 +102,7 @@ reset()
 
               <div style={{ display: "flex", alignItems: "center" }}>
 
-                <img style={{ width: "40px", height: "40px" }} src='https://i.ibb.co/9HdC8Kt/fileimge.png' alt="" />
+                <img style={{ width: "40px", height: "40px" }} src='https://backend-pink-seven.vercel.app/fileimge.png' alt="" />
                 <h3 style={{ color: 'white', marginRight: "10px" }}>{folder?.folder}</h3>
                 <button style={{ color: "red", background: "none", fontSize: "20px",cursor:"pointer" }} onClick={opendeleteModal}>&times;</button>
                 {deleteModal && (
