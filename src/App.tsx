@@ -46,7 +46,7 @@ function App() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/folder")
+    fetch("https://backend-pink-seven.vercel.app/folder")
       .then(res => res.json())
       .then(data => setFolder(data))
   }, [folderdata])
@@ -57,7 +57,7 @@ function App() {
 
     if (data) {
       const { folder } = data
-      fetch('http://localhost:5000/folder', {
+      fetch('https://backend-pink-seven.vercel.app/folder', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -75,7 +75,7 @@ reset()
 
   const handleDeleteFolder = (id: string) => {
     // Send DELETE request to backend API
-    axios.delete(`http://localhost:5000/folder/${id}`)
+    axios.delete(`https://backend-pink-seven.vercel.app/folder/${id}`)
       .then(res => {
         // Update state to remove deleted folder
          
@@ -94,7 +94,7 @@ reset()
 
           <div>
             <div style={{ display: "flex", alignItems: "center" }}>
-              <img style={{ width: "40px", height: "40px" }} src='https://backend-pink-seven.vercel.app/fileimge.png' alt="" />
+              <img style={{ width: "40px", height: "40px" }} src='https://i.ibb.co/9HdC8Kt/fileimge.png' alt="" />
               <h3 style={{ color: 'white' }}>Root</h3>
 
             </div>
@@ -102,7 +102,7 @@ reset()
 
               <div style={{ display: "flex", alignItems: "center" }}>
 
-                <img style={{ width: "40px", height: "40px" }} src='https://backend-pink-seven.vercel.app/fileimge.png' alt="" />
+                <img style={{ width: "40px", height: "40px" }} src='https://i.ibb.co/9HdC8Kt/fileimge.png' alt="" />
                 <h3 style={{ color: 'white', marginRight: "10px" }}>{folder?.folder}</h3>
                 <button style={{ color: "red", background: "none", fontSize: "20px",cursor:"pointer" }} onClick={opendeleteModal}>&times;</button>
                 {deleteModal && (
